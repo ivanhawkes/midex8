@@ -1448,8 +1448,7 @@ static void sb_midex_init_determine_type_and_name(
 		break;
 	}
 
-	if (midex->usbdev->product != NULL)
-	{
+	if (midex->usbdev->product != NULL) {
 		strncpy(midex->card->shortname, midex->usbdev->product,
 				sizeof(midex->card->shortname));
 		/* Device name from USB descriptor: */
